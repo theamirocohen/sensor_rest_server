@@ -14,7 +14,7 @@ I chose to trade off between slow excution time on the stats method (all sensors
 
 The server I chose to work with is a git repository called simple-web-server (https://gitlab.com/eidheim/Simple-Web-Server) which provided a very simple, fast, multithreaded, platform independent HTTP server and client library, adding the desired POST and GET methods was fast and intuitive.
 
-The functionality code is entirely in [server.cpp](https://github.com/theamirocohen/???/blob/main/server.cpp). 
+The functionality code is entirely in [server.cpp](https://github.com/theamirocohen/sensor_rest_server/blob/main/server.cpp). 
 
 ## algorithm explained
 
