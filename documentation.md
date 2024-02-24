@@ -29,7 +29,9 @@ For now there is no "memory cleanup" (garbage collection) to the server, several
 Adding a sensor data base is O(1)
 
 Printing specific sensor and day stats requires to fetch an already stats struct in O(1).
+
 Printing weekly stats for specific sensor requires to fetch all weekly struct stats (max of 7 structs) in O(1).
+
 Printing weekly stats for all sensor requires to fetch all data struct stats in O(N).
 
 
