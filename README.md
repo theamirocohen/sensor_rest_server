@@ -6,7 +6,7 @@ The API server used is the Simple-Web-Server [https://gitlab.com/eidheim/Simple-
 
 ## Usage
 
-See [server.cpp](https://github.com/theamirocohen/word_count_rest_server/blob/main/server.cpp) for example usage.
+See [server.cpp](https://github.com/theamirocohen/sensor_rest_server/blob/main/server.cpp) for example usage.
 The following server resources are setup using regular expressions to match request paths:
 * `POST /string` - parse the given string in to words.
 * `GET /stats` - responds with statistic information regarding the words occurrences.
@@ -50,14 +50,22 @@ Run the server: `./build/server`
 
 To post string use:
 ```sh
-curl -X POST http://localhost:8080/string -d "first_word,second_word"
+curl -X POST http://localhost:8080/string -d "sensor_id,temparture,date"
+```
+For example:
+```sh
+curl -X POST http://localhost:8080/string -d "2,30,20/2/2024"
 ```
 To get statistic infornation:
 ```sh
-curl -X GET http://localhost:8080/stats
+curl -X GET http://localhost:8080/stats?<sensor_id/ALL>,SUN/MON/TUE/WED/THU/FRI/SAT/ALL>
+```
+For example:
+```sh
+curl -X GET http://localhost:8080/stats?2,MON
 ```
 OR
-Direct your favorite browser to for instance http://localhost:8080/
+Direct your favorite browser to for instance http://localhost:8080/stats?<sensor_id/ALL>,SUN/MON/TUE/WED/THU/FRI/SAT/ALL>
 
 ### documentation 
 
