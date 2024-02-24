@@ -69,4 +69,4 @@ Direct your favorite browser to for instance http://localhost:8080/stats?<sensor
 
 ### documentation 
 
-For project documentation see [documentation.md](https://github.com/theamirocohen/word_count_rest_server/blob/main/documentation.md)
+For project documentation see [documentation.md](https://github.com/theamirocohen/sensor_rest_server/blob/main/documentation.md)
