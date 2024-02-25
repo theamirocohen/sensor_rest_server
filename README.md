@@ -1,4 +1,4 @@
-# Word-Count-Server
+# Sensor rest server
 
 A very simple, fast, multithreaded, REST server to receive  comma-separated words and show occurrences statistics.
 
