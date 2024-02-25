@@ -1,6 +1,6 @@
 # Sensor rest server
 
-A very simple, fast, multithreaded, REST server to receive  comma-separated words and show occurrences statistics.
+A very simple, fast, multithreaded, REST server to receive  comma-separated sensors statistics and show them.
 
 The API server used is the Simple-Web-Server [https://gitlab.com/eidheim/Simple-Web-Server] 
 
@@ -8,8 +8,8 @@ The API server used is the Simple-Web-Server [https://gitlab.com/eidheim/Simple-
 
 See [server.cpp](https://github.com/theamirocohen/sensor_rest_server/blob/main/server.cpp) for example usage.
 The following server resources are setup using regular expressions to match request paths:
-* `POST /string` - parse the given string in to words.
-* `GET /stats` - responds with statistic information regarding the words occurrences.
+* `POST /string` - parse the given sensor samples.
+* `GET /stats` - responds with statistic information.
 
 ## Dependencies
 
